@@ -26,7 +26,7 @@ A middleware application for the Evolution API that facilitates communication be
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm 
+- npm or yarn
 
 ### Steps
 
@@ -88,6 +88,15 @@ This project is implemented in Go. The main Go files include:
 - `models/`: Data structures used throughout the application
 - `config/`: Configuration loading and management
 - `middleware/`: HTTP middleware functions for authentication, logging, etc.
+
+### Technologies Used
+
+The middleware is built with the following technologies:
+
+- **[Gin Web Framework](https://github.com/gin-gonic/gin)**: A high-performance HTTP web framework that provides a robust set of features for building web applications and microservices
+- **CORS Middleware**: Uses gin-contrib/cors to handle Cross-Origin Resource Sharing
+- **HTTP Request Proxying**: Custom implementation for forwarding requests to the Evolution API
+- **Environment Configuration**: Flexible environment variable setup with sensible defaults
 
 To build the Go application:
 
